@@ -157,7 +157,7 @@ layout: false
 ---
 .left-column[
 ### Ποιος τον επινόησε;
-### Τι είναι το `HTTP`;
+### Τι είναι όμως το `HTTP`;
 ]
 ---
 .stretch[![](https://ruslanspivak.com/lsbaws-part1/LSBAWS_HTTP_request_response.png)]
@@ -175,6 +175,8 @@ template: inverse
 ]
 .right-column[
 - Η `HTML` είναι η γλώσσα με την οποία κατασκευάζουμε ιστοσελίδες
+      
+- Είναι μια *δηλωτική* γλώσσα
 
 - `HTML` σημαίνει `HyperText Markup Language`
 
@@ -183,45 +185,26 @@ template: inverse
 
 - Νέο standard πρότυπο για την `HTML`, την `XHTML` και την `HTML DOM`. Η ανάπτυξη της `HTML5` έγινε με την συνεργασία της `World Wide Web Consortium` (`W3C`) και της `Web Hypertext Application Technology Working Group` (`WHATWG`)
 ]
-
-Regular Markdown rules apply with only a single exception:
-
-  - A line containing three dashes constitutes a new slide
-  (not a horizontal rule, `&lt;hr /&gt;`)
-
-Have a look at the [Markdown website](http://daringfireball.net/projects/markdown/) if you're not familiar with Markdown formatting.
-]
 ---
 .left-column[
-  ## How does it work?
-  ### - Markdown
-  ### - Inside HTML
+### HyperText Markup Language
+  ## - Βασική δομή
 ]
 .right-column[
-A simple HTML document is needed for hosting the styles, Markdown and the generated slides themselves:
-
 ```xml
 <!DOCTYPE html>
 <html>
   <head>
-    <style type="text/css">
-      /* Slideshow styles */
+    <title>
+      Ο τίτλος της σελίδας
     </style>
   </head>
   <body>
-*    <textarea id="source">
-      <!-- Slideshow Markdown -->
-    &lt;/textarea&gt;
-*    <script src="remark.js">
-    </script>
-    <script>
-*      var slideshow = remark.create();
-    </script>
+    <h1>Επικεφαλίδα</h1>
+    <p>Αυτή είναι μία παράγραφος.</p>
   </body>
 </html>
 ```
-
-You may download remark to have your slideshow not depend on any online resources, or reference the [latest version](http://remarkjs.com/downloads/remark-latest.min.js) online directly.
 ]
 ---
 template: inverse
